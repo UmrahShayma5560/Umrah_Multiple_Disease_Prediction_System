@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif, 'Courier New', Courier, monospace, 'Times New Roman', Times, serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: white;
+    background-size: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    /* height:40px; */
+    background-color:rgb(27, 226, 233);
+    text-align: center;
+    color: rgb(100, 100, 100);
+  }
+  
+  .hadder_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:25%;
+  }
+  .lower-header{
+    display: flex;
+    align-items: center;
+    width: 100%;  
+  }
+  .lower-header-content img{
+    width:100px;
+  }
+  .lower-header-content{
+    width:100%;
+    height:120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .lower-header h1{
+    width: auto;
+  }
+  .lower-header a{
+  width:auto;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size:18px ;
+  }
+  

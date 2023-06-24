@@ -1,0 +1,101 @@
+<html>
+    <body>
+        <style>
+            header{
+        width: 100%;
+        /* height:40px; */
+        background-color:rgb(27, 226, 233);
+        text-align: center;
+        color: rgb(100, 100, 100);
+    }
+    
+    .hadder_links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:25%;
+    }
+    .lower-header{
+        display: flex;
+        align-items: center;
+        width: 100%;  
+    }
+    .lower-header-content img{
+        width:100px;
+    }
+    .lower-header-content{
+        width:100%;
+        height:120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .lower-header h1{
+        width: auto;
+    }
+    .lower-header a{
+    width:auto;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size:18px ;
+    }
+    .Btnn{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+        </style>
+        <body>
+            <header>
+                <div class="lower-header">
+                     <div class="lower-header-content">
+                         <div class="logo_and_name">
+                              <a href="#">
+                                 <h1>Disease Prediction System</h1>
+                             </a>
+                         </div>
+                         <div class="hadder_links">
+                            <a href="http://127.0.0.1:5501/main.html">Home</a>
+                            <a href="http://127.0.0.1:5501/about%20page/about.html">About</a>
+                            <a href="http://127.0.0.1:5501/login%20page/index.html">Register & Login</a>
+                            <a href="http://127.0.0.1:5501/contact%20page/contact.html">Contact us</a>
+                     </div>
+                 </div>
+             </header>
+        <center>
+
+        <h1> PARKINSON DISEASE DETECTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> MDVP:Fo(Hz) :  <input type="text", name='a', placeholder="enter value"> <br><br>
+            MDVP:Fhi(Hz) :  <input type="text", name='b', placeholder="enter value"> <br><br>
+            MDVP:Flo(Hz) :  <input type="text", name='c', placeholder="enter value"> <br><br>
+            MDVP:Jitter(%) : <input type="text", name='d', placeholder="enter value"> <br><br>
+            MDVP:Jitter(Abs) : <input type="text", name='e', placeholder="enter value"> <br><br>
+            MDVP:RAP : <input type="text", name='f', placeholder="enter value"> <br><br>
+            MDVP:PPQ : <input type="text", name='g', placeholder="enter value"> <br><br>
+            Jitter:DDP : <input type="text", name='h', placeholder="enter value"> <br><br>
+            MDVP:Shimmer : <input type="text", name='i', placeholder="enter value"> <br><br>
+            MDVP:Shimmer(dB) : <input type="text", name='j', placeholder="enter value"> <br><br>
+            Shimmer:APQ3 : <input type="text", name='k', placeholder="enter value"> <br><br>
+            Shimmer:APQ5 : <input type="text", name='l', placeholder="enter value"> <br><br>
+            MDVP:APQ : <input type="text", name='m', placeholder="enter value"> <br><br>
+            AShimmer:DDA : <input type="text", name='n', placeholder="enter value"> <br><br>
+            NHR : <input type="text", name='o', placeholder="enter value"> <br><br>
+            HNR : <input type="text", name='p', placeholder="enter value"> <br><br>
+            RPDE : <input type="text", name='q', placeholder="enter value"> <br><br>
+            DFA : <input type="text", name='r', placeholder="enter value"> <br><br>
+            Spread1 : <input type="text", name='s', placeholder="enter value"> <br><br>
+            Spread2 : <input type="text", name='t', placeholder="enter value"> <br><br>
+            D2 : <input type="text", name='u', placeholder="enter value"> <br><br>
+            PPE : <input type="text", name='v', placeholder="enter value"> <br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+        
+    </center>
+    <div class="Btnn">
+        <button type="button"><a href="http://127.0.0.1:5501/multiple%20login/login.html">Back</a></button>
+        </div>
+    </body>
+</html>
